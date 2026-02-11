@@ -73,3 +73,96 @@
   1. Preencher apenas 1 ou 2 campos
   2. Clicar em **Registrar**
 - **Resultado esperado:** Sistema não conclui cadastro e aponta exatamente quais campos/regas faltam
+
+
+## 📌 Módulo: Login
+
+### CT-LOG-001 — Login com credenciais válidas (servidor Online)
+- **Pré-condição:** Server status = **Online** e usuário cadastrado
+- **Dados de teste:**
+  - Usuário: `Teste1`
+  - Senha: `123456`
+- **Passos:**
+  1. Abrir o cliente do jogo
+  2. Confirmar que o **Server status** está **Online**
+  3. Informar Usuário e Senha válidos
+  4. Clicar em **Entrar**
+- **Resultado esperado:** Login realizado com sucesso e redirecionar para a próxima tela (ex: seleção de personagem)
+
+---
+
+### CT-LOG-002 — Tentar entrar com campos vazios
+- **Pré-condição:** Server status = **Online**
+- **Passos:**
+  1. Deixar Usuário e Senha vazios
+  2. Clicar em **Entrar**
+- **Resultado esperado:** Sistema impede login e exibe validação de campos obrigatórios
+
+---
+
+### CT-LOG-003 — Usuário com menos de 3 letras
+- **Pré-condição:** Server status = **Online**
+- **Dados de teste:** Usuário: `ab`
+- **Passos:**
+  1. Preencher Senha com valor válido
+  2. Informar Usuário com menos de 3 letras
+  3. Clicar em **Entrar**
+- **Resultado esperado:** Sistema impede login e informa regra de mínimo 3 letras para Usuário
+
+---
+
+### CT-LOG-004 — Senha com menos de 3 caracteres
+- **Pré-condição:** Server status = **Online**
+- **Dados de teste:** Senha: `ab`
+- **Passos:**
+  1. Preencher Usuário com valor válido
+  2. Informar Senha com menos de 3 caracteres
+  3. Clicar em **Entrar**
+- **Resultado esperado:** Sistema impede login e informa regra de mínimo 3 caracteres para Senha
+
+---
+
+### CT-LOG-005 — Usuário inexistente
+- **Pré-condição:** Server status = **Online**
+- **Dados de teste:** Usuário: `usuario_que_nao_existe`
+- **Passos:**
+  1. Informar usuário inexistente e uma senha qualquer
+  2. Clicar em **Entrar**
+- **Resultado esperado:** Sistema não loga e exibe mensagem de credenciais inválidas: "That account name does not exist."
+
+---
+
+### CT-LOG-006 — Senha incorreta para usuário existente
+- **Pré-condição:** Server status = **Online** e usuário cadastrado
+- **Passos:**
+  1. Informar Usuário válido
+  2. Informar Senha incorreta
+  3. Clicar em **Entrar**
+- **Resultado esperado:** Sistema não loga e exibe mensagem de erro: "You've entered an incorrect password."
+
+---
+
+### CT-LOG-007 — Tentar logar com servidor Offline
+- **Pré-condição:** Server status = **Offline**
+- **Passos:**
+  1. Abrir o cliente
+  2. Confirmar que o Server status está **Offline**
+  3. Informar Usuário e Senha válidos
+  4. Clicar em **Entrar**
+- **Resultado esperado:** Sistema impede login e informa que o servidor está indisponível/offline
+
+---
+
+### CT-LOG-008 — Link “Clique aqui” leva para cadastro
+- **Pré-condição:** Estar na tela de login
+- **Passos:**
+  1. Clicar em **Clique aqui** (Ainda não possui conta?)
+- **Resultado esperado:** Abrir a tela de cadastro/registro
+
+---
+
+### CT-LOG-009 — Botão “X” fecha a janela de login
+- **Pré-condição:** Janela de login aberta
+- **Passos:**
+  1. Clicar no botão **X**
+- **Resultado esperado:** Janela de login é fechada (sair do jogo)

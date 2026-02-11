@@ -43,14 +43,22 @@ Este documento descreve os requisitos iniciais para os fluxos essenciais do jogo
 ### RF-02 — Login
 **Descrição:** O sistema deve autenticar o usuário e permitir acesso ao jogo.
 
-**Regras:**
-- Não permitir login com campos vazios.
-- Bloquear login com credenciais inválidas.
-- Apresentar mensagem de erro apropriada.
+**Campos:**
+- Usuário
+- Senha
 
-**Critérios de aceite:**
-- Login bem-sucedido redireciona para seleção de personagem.
-- Em erro, exibir mensagem ao usuário sem travar o cliente.
+**Pré-condição:**
+- **Server status deve estar Online** (caso esteja Offline, o login não deve prosseguir)
+
+**Regras:**
+- Campos Usuário e Senha são obrigatórios.
+- Usuário deve ter no mínimo **3 letras**.
+- Senha deve ter no mínimo **3 caracteres**.
+- Ao clicar em **Entrar**, o sistema deve validar os campos e autenticar o usuário.
+
+- Com credenciais válidas e servidor Online, o usuário deve acessar a próxima tela (ex: seleção de personagem).
+- Com credenciais inválidas, exibir mensagem clara sem travar o cliente.
+- Com servidor Offline, impedir login e informar indisponibilidade do servidor.
 
 ---
 
