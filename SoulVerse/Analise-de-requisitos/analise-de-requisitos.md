@@ -27,14 +27,16 @@ Este documento descreve os requisitos iniciais para os fluxos essenciais do jogo
 - Confirmar senha
 
 **Regras:**
-- E-mail deve ter formato válido.
-- Senha deve ter um mínimo de caracteres.
-- Senha e confirmação devem ser iguais.
-- Não permitir cadastro com e-mail ou usuário já existente.
+- Todos os campos são obrigatórios.
+- **Usuário** deve ter no mínimo **3 letras**.
+- **Senha** deve ter no mínimo **3 caracteres**.
+- **Confirmar senha** deve ser igual à **Senha**.
+- **Email** deve ter formato válido.
+- Ao clicar no botão **Registrar**, o sistema deve validar os campos e concluir o cadastro quando estiver tudo correto.
 
 **Critérios de aceite:**
-- Conta criada com sucesso quando dados válidos.
-- Mensagens claras quando inválido.
+- Com dados válidos, exibir confirmação de cadastro e permitir seguir para login.
+- Com dados inválidos, bloquear o cadastro e mostrar mensagem clara indicando o problema.
 
 ---
 
