@@ -1,12 +1,39 @@
-# Portfólio de Testes Manuais – SoulVerse
+# Soulverse — Testes Manuais
 
-SoulVerse é um MMORPG inspirado no universo do anime BLEACH, desenvolvido com gráficos 2D em estilo pixel art. O jogo conta com diversas classes jogáveis e múltiplos sistemas de gameplay, incluindo dungeons, missões, cartas no estilo Ragnarok, Raid Boss, mercado global, Guildas e batalhas de Guerra de Guildas.
+Projeto de testes manuais aplicado ao **Soulverse**, um MMORPG 2D em pixel art inspirado no universo de BLEACH.
 
+O Soulverse é um jogo real em desenvolvimento, criado pelo próprio autor deste repositório.
 
-Este repositório tem como objetivo documentar a estratégia e execução de testes manuais aplicados ao jogo, incluindo:
+## Sobre o jogo
 
-- Plano de Testes  
-- Análise de Requisitos  
-- Cenários de Teste  
+* MMORPG 2D estilo pixel art
+* Classes jogáveis: Shinigami, Hollow, Quincy e Ryoka
+* Sistemas:
 
-Autor: Daniel Chicotti
+  * Criação de personagem
+  * Dungeons
+  * Missões (Quests)
+  * Sistema de cartas (inspirado em Ragnarok)
+  * Guildas e Guerra de Guildas
+  * Raid Boss
+
+## Objetivo dos testes
+
+Garantir a qualidade das funcionalidades principais através de:
+
+* Testes funcionais
+* Validação de regras de negócio
+* Identificação e registro de defeitos
+* Evidências (prints e GIFs)
+
+## Estrutura
+
+* Plano de Testes
+* Análise de Requisitos
+* Cenários de Teste
+* Evidências
+* Registro de Defeitos
+
+## Autor
+
+Daniel Chicotti
