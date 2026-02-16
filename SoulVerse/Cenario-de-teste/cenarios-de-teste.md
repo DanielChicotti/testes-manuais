@@ -17,6 +17,20 @@
   3. Clicar em **Registrar**
 - **Resultado esperado:** Cadastro realizado com sucesso (exibir mensagem de sucesso: "Your account has been created!")
 
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 16/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+- Evidência: Ver evidência
+
 ---
 
 ### CT-CAD-002 — Tentar registrar com campos vazios
