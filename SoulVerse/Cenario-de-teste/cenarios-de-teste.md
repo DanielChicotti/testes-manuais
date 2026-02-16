@@ -166,3 +166,43 @@
 - **Passos:**
   1. Clicar no botão **X**
 - **Resultado esperado:** Janela de login é fechada (sair do jogo)
+
+---
+
+## 📌 Módulo: Seleção de Personagem
+
+### CT-SEL-001 — Exibir slots vazios corretamente
+- **Pré-condição:** Login realizado com conta sem personagens criados
+- **Passos:**
+  1. Realizar login com sucesso
+- **Resultado esperado:**
+  - Exibir 8 slots
+  - Cada slot deve mostrar "Slot de Personagem Vazio"
+
+---
+
+### CT-SEL-002 — Botão Criar redireciona para criação
+- **Pré-condição:** Estar na tela de seleção
+- **Passos:**
+  1. Clicar em "Criar"
+- **Resultado esperado:**
+  - Sistema deve abrir tela de criação de personagem
+
+---
+
+### CT-SEL-003 — Botão Voltar retorna para tela anterior
+- **Pré-condição:** Estar na tela de seleção
+- **Passos:**
+  1. Clicar em "Voltar"
+- **Resultado esperado:**
+  - Retornar para tela anterior (login ou menu principal)
+
+---
+
+### CT-SEL-004 — Scroll lateral funciona corretamente
+- **Pré-condição:** Tela aberta
+- **Passos:**
+  1. Utilizar a barra de rolagem
+- **Resultado esperado:**
+  - Rolagem suave
+  - Nenhum travamento visual

@@ -72,35 +72,62 @@ Este documento descreve os requisitos iniciais para os fluxos essenciais do jogo
 ---
 
 ### RF-04 — Seleção de Personagem
-**Descrição:** O sistema deve exibir a lista de personagens do usuário e permitir selecionar um.
+**Descrição:** O sistema deve exibir os slots de personagem do usuário após login bem-sucedido.
 
 **Regras:**
-- Exibir lista (ou estado “sem personagens”).
+- Exibir até 8 slots de personagem.
+- Caso não exista personagem, exibir "Slot de Personagem Vazio".
 - Permitir selecionar um personagem existente.
+- Permitir clicar em "Criar" para criar novo personagem.
+- Permitir clicar em "Voltar" para retornar à tela anterior.
 
 **Critérios de aceite:**
-- Seleção válida direciona para o jogo.
-- Se não houver personagem, orientar a criação.
+- Slots vazios devem estar identificados.
+- Scroll deve funcionar corretamente.
+- Botões devem responder corretamente.
 
 ---
 
 ### RF-05 — Criação de Personagem
-**Descrição:** O sistema deve permitir criar um personagem para o usuário.
 
-**Campos esperados (exemplo):**
-- Nome do personagem
-- Classe
-- Aparência
+**Descrição:** O sistema deve permitir que o usuário crie um novo personagem.
 
-**Regras:**
-- Nome obrigatório.
-- Não permitir nome já existente.
-- Restringir caracteres inválidos (ex: símbolos proibidos).
+**Campos e opções disponíveis:**
+- Nome do personagem (campo texto)
+- Classe:
+  - Shinigami (pré-selecionada por padrão)
+  - Hollow
+  - Quincy
+  - Ryoka
+- Zanpakutou (selecionável com setas < >)
+- Aparência (selecionável com setas < >)
+- Gênero:
+  - Masculino
+  - Feminino
+- Botão "Criar"
+- Botão "X" para fechar
 
+---
 
-**Critérios de aceite:**
-- Ao criar, personagem aparece na lista de seleção.
-- Mensagens claras para validações.
+### Regras de Negócio
+
+- Nome do personagem é obrigatório.
+- Nome não pode estar vazio.
+- Nome deve respeitar limite mínimo/máximo (definir quando confirmado).
+- Classe Shinigami deve estar selecionada por padrão.
+- Apenas uma classe pode estar ativa por vez.
+- Aparência deve mudar de acordo com o gênero selecionado.
+- Ao clicar em "Criar", o sistema deve validar todos os campos antes de concluir.
+
+---
+
+### Critérios de Aceite
+
+- Personagem criado deve aparecer na tela de seleção.
+- Não permitir criação com nome inválido.
+- Alternância de classe deve atualizar corretamente.
+- Setas de Zanpakutou e Aparência devem funcionar sem travar.
+
 
 ---
 
