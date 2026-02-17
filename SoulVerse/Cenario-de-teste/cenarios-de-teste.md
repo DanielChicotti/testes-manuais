@@ -7,8 +7,8 @@
 ### CT-CAD-001 — Cadastro com dados válidos
 - **Pré-condição:** Usuário não cadastrado anteriormente
 - **Dados de teste:**  
-  - Usuário: `Teste1`  
-  - Email: `Teste1@gmail.com`  
+  - Usuário: `Teste01`  
+  - Email: `Teste01@gmail.com`  
   - Senha: `123456`  
   - Confirmar senha: `123456`
 - **Passos:**
@@ -40,6 +40,20 @@ Execução do Teste
   2. Clicar em **Registrar**
 - **Resultado esperado:** Sistema impede o cadastro e exibe mensagens de validação para campos obrigatórios
 
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 17/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Cadastro/CT-CAD-002_Sucesso.gif)
+
 ---
 
 ### CT-CAD-003 — Usuário com menos de 3 letras
@@ -49,6 +63,20 @@ Execução do Teste
   2. Clicar em **Registrar**
 - **Resultado esperado:** Sistema impede o cadastro e informa que o Usuário deve ter no mínimo 3 letras
 
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 17/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Cadastro/CT-CAD-003_Sucesso.gif)
+
 ---
 
 ### CT-CAD-004 — Senha com menos de 3 caracteres
@@ -57,6 +85,20 @@ Execução do Teste
   1. Preencher todos os campos corretamente, exceto Senha com menos de 3 caracteres
   2. Clicar em **Registrar**
 - **Resultado esperado:** Sistema impede o cadastro e informa que a senha deve ter no mínimo 3 caracteres
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 17/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Cadastro/CT-CAD-004_Sucesso.gif)
 
 ---
 
@@ -70,6 +112,20 @@ Execução do Teste
   3. Clicar em **Registrar**
 - **Resultado esperado:** Sistema impede o cadastro e exibe mensagem informando que as senhas não coincidem
 
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 17/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Cadastro/CT-CAD-005_Sucesso.gif)
+
 ---
 
 ### CT-CAD-006 — Email em formato inválido
@@ -79,6 +135,20 @@ Execução do Teste
   2. Clicar em **Registrar**
 - **Resultado esperado:** Sistema impede o cadastro e informa que o Email é inválido
 
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 17/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Cadastro/CT-CAD-006_Sucesso.gif)
+
 ---
 
 ### CT-CAD-007 — Verificar se o botão Registrar valida antes de enviar
@@ -87,6 +157,20 @@ Execução do Teste
   1. Preencher apenas 1 ou 2 campos
   2. Clicar em **Registrar**
 - **Resultado esperado:** Sistema não conclui cadastro e aponta exatamente quais campos/regas faltam
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 17/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Cadastro/CT-CAD-007_Sucesso.gif)
 
 
 ## 📌 Módulo: Login
