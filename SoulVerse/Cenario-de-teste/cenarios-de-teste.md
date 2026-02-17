@@ -129,7 +129,7 @@ Execução do Teste
 ---
 
 ### CT-CAD-006 — Email em formato inválido
-- **Dados de teste:** Email: `danielqa.com`
+- **Dados de teste:** Email: `testegmail`
 - **Passos:**
   1. Preencher os campos com Email inválido
   2. Clicar em **Registrar**
