@@ -29,7 +29,7 @@ Execução do Teste
 
 - Executor: Daniel Chicotti
 
-**Evidência:** [Visualizar GIF](../../Evidencias/Cadastro/CT-CAD-001_Sucesso.gif)
+**Evidência:** [Visualizar GIF](../Evidencias/Cadastro/CT-CAD-001_Sucesso.gif)
 
 ---
 
