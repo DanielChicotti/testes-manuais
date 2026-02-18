@@ -178,14 +178,28 @@ Execução do Teste
 ### CT-LOG-001 — Login com credenciais válidas (servidor Online)
 - **Pré-condição:** Server status = **Online** e usuário cadastrado
 - **Dados de teste:**
-  - Usuário: `Teste1`
+  - Usuário: `Teste01`
   - Senha: `123456`
 - **Passos:**
   1. Abrir o cliente do jogo
   2. Confirmar que o **Server status** está **Online**
   3. Informar Usuário e Senha válidos
   4. Clicar em **Entrar**
-- **Resultado esperado:** Login realizado com sucesso e redirecionar para a próxima tela (ex: seleção de personagem)
+- **Resultado esperado:** Login realizado com sucesso e redirecionar para a próxima tela (seleção de personagem)
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 18/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Login/CT-LOG-001_Sucesso.gif)
 
 ---
 
@@ -196,6 +210,20 @@ Execução do Teste
   2. Clicar em **Entrar**
 - **Resultado esperado:** Sistema impede login e exibe validação de campos obrigatórios
 
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 18/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Login/CT-LOG-002_Sucesso.gif)
+
 ---
 
 ### CT-LOG-003 — Usuário com menos de 3 letras
@@ -205,28 +233,70 @@ Execução do Teste
   1. Preencher Senha com valor válido
   2. Informar Usuário com menos de 3 letras
   3. Clicar em **Entrar**
-- **Resultado esperado:** Sistema impede login e informa regra de mínimo 3 letras para Usuário
+- **Resultado esperado:** Sistema impede login e informa regra de mínimo 3 letras para Usuário ou Senha
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 18/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Login/CT-LOG-003_Sucesso.gif)
 
 ---
 
 ### CT-LOG-004 — Senha com menos de 3 caracteres
 - **Pré-condição:** Server status = **Online**
-- **Dados de teste:** Senha: `ab`
+- **Dados de teste:** Senha: `12`
 - **Passos:**
   1. Preencher Usuário com valor válido
   2. Informar Senha com menos de 3 caracteres
   3. Clicar em **Entrar**
-- **Resultado esperado:** Sistema impede login e informa regra de mínimo 3 caracteres para Senha
+- **Resultado esperado:** Sistema impede login e informa regra de mínimo 3 caracteres para Usuário ou Senha
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 18/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Login/CT-LOG-004_Sucesso.gif)
 
 ---
 
 ### CT-LOG-005 — Usuário inexistente
 - **Pré-condição:** Server status = **Online**
-- **Dados de teste:** Usuário: `usuario_que_nao_existe`
+- **Dados de teste:** Usuário: `Teste00` Senha: `123456`
 - **Passos:**
   1. Informar usuário inexistente e uma senha qualquer
   2. Clicar em **Entrar**
 - **Resultado esperado:** Sistema não loga e exibe mensagem de credenciais inválidas: "That account name does not exist."
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 18/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Login/CT-LOG-005_Sucesso.gif)
 
 ---
 
@@ -237,6 +307,20 @@ Execução do Teste
   2. Informar Senha incorreta
   3. Clicar em **Entrar**
 - **Resultado esperado:** Sistema não loga e exibe mensagem de erro: "You've entered an incorrect password."
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 18/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Login/CT-LOG-006_Sucesso.gif)
 
 ---
 
@@ -249,6 +333,21 @@ Execução do Teste
   4. Clicar em **Entrar**
 - **Resultado esperado:** Sistema impede login e informa que o servidor está indisponível/offline
 
+Execução do Teste
+
+Status: ❌ Fail
+Data da execução: 18/02/2026
+Versão testada: Beta
+Ambiente: Cliente Desktop
+Executor: Daniel Chicotti
+Evidência: [Visualizar GIF](../Evidencias/Login/CT-LOG-007_Fail.gif)
+Defeito relacionado: BUG-002
+
+Motivo do Fail:
+
+Resultado esperado não foi atendido (não exibiu mensagem ao usuário que o servidor está offline)
+
+
 ---
 
 ### CT-LOG-008 — Link “Clique aqui” leva para cadastro
@@ -257,6 +356,20 @@ Execução do Teste
   1. Clicar em **Clique aqui** (Ainda não possui conta?)
 - **Resultado esperado:** Abrir a tela de cadastro/registro
 
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 18/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Login/CT-LOG-008_Sucesso.gif)
+
 ---
 
 ### CT-LOG-009 — Botão “X” fecha a janela de login
@@ -264,6 +377,20 @@ Execução do Teste
 - **Passos:**
   1. Clicar no botão **X**
 - **Resultado esperado:** Janela de login é fechada (sair do jogo)
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 18/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+s
+**Evidência:** [Visualizar GIF](../Evidencias/Login/CT-LOG-009_Sucesso.gif)
 
 ---
 
