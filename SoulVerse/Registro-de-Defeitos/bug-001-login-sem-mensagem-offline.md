@@ -1,11 +1,17 @@
 # BUG-001 — Login bloqueado sem mensagem quando servidor está offline
 
 **Módulo:** Login
+
 **Severidade:** Média
+
 **Prioridade:** Média
+
 **Status:** Aberto
+
 **Ambiente:** Cliente Desktop — Beta
+
 **Data:** 18/02/2026
+
 **Reportado por:** Daniel Chicotti
 
 ---
