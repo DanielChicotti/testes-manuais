@@ -335,17 +335,23 @@ Execução do Teste
 
 Execução do Teste
 
-Status: ❌ Fail
-Data da execução: 18/02/2026
-Versão testada: Beta
-Ambiente: Cliente Desktop
-Executor: Daniel Chicotti
-Evidência: [Visualizar GIF](../Evidencias/Login/CT-LOG-007_Fail.gif)
-Defeito relacionado: BUG-002
+- Status: ❌ Fail
 
-Motivo do Fail:
+- Data da execução: 18/02/2026
 
-Resultado esperado não foi atendido (não exibiu mensagem ao usuário que o servidor está offline)
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Login/CT-LOG-007_Fail.gif)
+
+- Defeito relacionado: BUG-002
+
+- Motivo do Fail:
+
+- Resultado esperado não foi atendido (não exibiu mensagem ao usuário que o servidor está offline)
 
 
 ---
@@ -389,7 +395,7 @@ Execução do Teste
 - Ambiente: Cliente Desktop
 
 - Executor: Daniel Chicotti
-s
+
 **Evidência:** [Visualizar GIF](../Evidencias/Login/CT-LOG-009_Sucesso.gif)
 
 ---
