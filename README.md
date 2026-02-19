@@ -182,4 +182,6 @@ Em evolução — novos cenários e módulos serão adicionados conforme o avan�
 
 Daniel Chicotti
 
+https://www.linkedin.com/in/danielchicotti/
+
 QA | Testes Manuais | Game Testing
