@@ -1,4 +1,4 @@
-# BUG-002 — Login bloqueado sem mensagem quando servidor está offline
+# BUG-001 — Login bloqueado sem mensagem quando servidor está offline
 
 **Módulo:** Login
 **Severidade:** Média
