@@ -410,6 +410,20 @@ Execução do Teste
   - Exibir 8 slots
   - Cada slot deve mostrar "Slot de Personagem Vazio"
 
+  Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 19/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Selecao-Personagem/CT-SEL-001_Sucesso.gif)
+
 ---
 
 ### CT-SEL-002 — Botão Criar redireciona para criação
@@ -418,6 +432,20 @@ Execução do Teste
   1. Clicar em "Criar"
 - **Resultado esperado:**
   - Sistema deve abrir tela de criação de personagem
+
+ Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 19/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Selecao-Personagem/CT-SEL-002_Sucesso.gif)  
 
 ---
 
@@ -428,12 +456,293 @@ Execução do Teste
 - **Resultado esperado:**
   - Retornar para tela anterior (login ou menu principal)
 
+  Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 19/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Selecao-Personagem/CT-SEL-003_Sucesso.gif) 
+
 ---
 
 ### CT-SEL-004 — Scroll lateral funciona corretamente
-- **Pré-condição:** Tela aberta
+- **Pré-condição:** Estar na tela de seleção
 - **Passos:**
   1. Utilizar a barra de rolagem
 - **Resultado esperado:**
   - Rolagem suave
   - Nenhum travamento visual
+
+  Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 19/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Selecao-Personagem/CT-SEL-001_Sucesso.gif)
+
+---
+
+## 📌 Módulo: Criação de Personagem
+
+## CT-CHAR-001 — Criar personagem com dados válidos
+
+**Pré-condição:** Estar na tela de seleção
+
+**Dados de teste:**
+
+* Nome: Ichigo (Ou algum outro nome se esse já estiver sendo utilizado)
+
+**Passos:**
+
+1. Acessar a tela de criação de personagem
+2. Informar um nome válido
+3. Manter a classe padrão (Shinigami)
+4. Clicar em **Criar**
+
+**Resultado esperado:**
+Personagem criado com sucesso e entrada no jogo.
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 24/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Criacao-Personagem/CT-CHAR-001_Sucesso.gif)
+
+---
+
+## CT-CHAR-002 — Verificar classe padrão selecionada
+
+**Pré-condição:** Usuário logado
+
+**Passos:**
+
+1. Acessar a tela de criação de personagem
+
+**Resultado esperado:**
+A classe **Shinigami** deve estar selecionada automaticamente.
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 24/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Criacao-Personagem/CT-CHAR-002_Sucesso.gif)
+
+---
+
+## CT-CHAR-003 — Alterar classe do personagem
+
+**Pré-condição:** Usuário logado
+
+**Passos:**
+
+1. Acessar a tela de criação de personagem
+2. Selecionar a classe **Hollow**
+3. Informar um nome válido
+4. Clicar em **Criar**
+
+**Resultado esperado:**
+Personagem criado com a classe selecionada.
+
+(Repetir o teste para Quincy e Ryoka)
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 24/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Criacao-Personagem/CT-CHAR-003_Sucesso.gif)
+
+---
+
+## CT-CHAR-004 — Tentar criar personagem sem nome
+
+**Pré-condição:** Usuário logado
+
+**Passos:**
+
+1. Acessar a tela de criação de personagem
+2. Deixar o campo de nome vazio
+3. Clicar em **Criar**
+
+**Resultado esperado:**
+Sistema deve impedir a criação e exibir mensagem informando que o nome é obrigatório.
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 24/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Criacao-Personagem/CT-CHAR-004_Sucesso.gif)
+
+---
+
+## CT-CHAR-005 — Inserir nome com menos de 3 caracteres
+
+**Pré-condição:** Usuário logado
+
+**Dados de teste:**
+
+* Nome: Ab
+
+**Passos:**
+
+1. Acessar a tela de criação de personagem
+2. Informar nome com menos de 3 caracteres
+3. Clicar em **Criar**
+
+**Resultado esperado:**
+Sistema deve exibir validação informando o tamanho mínimo.
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 24/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Criacao-Personagem/CT-CHAR-005_Sucesso.gif)
+
+---
+
+## CT-CHAR-006 — Inserir nome com caracteres especiais
+
+**Pré-condição:** Usuário logado
+
+**Dados de teste:**
+
+* Nome: Ichigo!@#
+
+**Passos:**
+
+1. Acessar a tela de criação de personagem
+2. Informar nome com caracteres especiais
+3. Clicar em **Criar**
+
+**Resultado esperado:**
+Sistema deve aceitar apenas caracteres permitidos (letras e números) e exibir mensagem de validação.
+
+Execução do Teste
+
+- Status: ❌ Fail
+
+- Data da execução: 24/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Criacao-Personagem/CT-CHAR-006_Fail.gif)
+
+---
+
+## CT-CHAR-007 — Inserir nome acima do limite permitido
+
+**Pré-condição:** Usuário logado
+
+**Dados de teste:**
+
+* Nome com mais de 50 caracteres
+
+**Passos:**
+
+1. Acessar a tela de criação de personagem
+2. Inserir nome muito longo
+3. Clicar em **Criar**
+
+**Resultado esperado:**
+Sistema deve limitar automaticamente a quantidade de caracteres e permitir a criação de persongem.
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 24/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Criacao-Personagem/CT-CHAR-007_Sucesso.gif)
+
+---
+
+## CT-CHAR-008 — Tentar criar múltiplos personagens com o mesmo nome
+
+**Pré-condição:** Já existe um personagem com o nome “Ichigo”
+
+**Passos:**
+
+1. Acessar a tela de criação de personagem
+2. Informar o mesmo nome
+3. Clicar em **Criar**
+
+**Resultado esperado:**
+Sistema deve impedir a criação e informar que o nome já está em uso.
+
+Execução do Teste
+
+- Status: ✔ Pass
+
+- Data da execução: 24/02/2026
+
+- Versão testada: Beta
+
+- Ambiente: Cliente Desktop
+
+- Executor: Daniel Chicotti
+
+**Evidência:** [Visualizar GIF](../Evidencias/Criacao-Personagem/CT-CHAR-008_Sucesso.gif)
+
