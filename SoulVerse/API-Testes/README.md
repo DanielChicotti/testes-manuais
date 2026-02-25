@@ -34,9 +34,13 @@ Endpoint testado: POST /login
 ## 📂 Estrutura da Pasta
 
 API-Testes/
+
 ├── Cenarios/ → Documentação detalhada de cada teste
+
 ├── Evidencias/ → Prints das execuções no Postman
+
 ├── Colecao-Postman/ → Export da coleção Postman
+
 └── README.md
 
 
