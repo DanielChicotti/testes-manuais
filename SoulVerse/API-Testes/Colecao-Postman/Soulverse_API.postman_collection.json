@@ -1,0 +1,221 @@
+{
+  "info": {
+    "_postman_id": "a7e63010-1a1d-450d-a12d-01b63dce0dc6",
+    "name": "Soulverse API Tests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28198434",
+    "_collection_link": "https://go.postman.co/collection/28198434-a7e63010-1a1d-450d-a12d-01b63dce0dc6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "API-LOGIN-001 - Login válido",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8cc9ea7eb3f4155857a1e4a32c241bc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"eve.holt@reqres.in\",\r\n  \"password\": \"cityslicka\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://reqres.in/api/login",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "API-LOGIN-002- Login sem senha",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8cc9ea7eb3f4155857a1e4a32c241bc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"eve.holt@reqres.in\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://reqres.in/api/login",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "API-LOGIN-003 -Email inválido",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8cc9ea7eb3f4155857a1e4a32c241bc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"teste@invalido.com\",\r\n  \"password\": \"123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://reqres.in/api/login",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "API-LOGIN-004 - Login com body vazio",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8cc9ea7eb3f4155857a1e4a32c241bc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://reqres.in/api/login",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "API-LOGIN-005 - Método Inválido",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8cc9ea7eb3f4155857a1e4a32c241bc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://reqres.in/api/login",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "API-USER-GET-001",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_d8cc9ea7eb3f4155857a1e4a32c241bc",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://reqres.in/api/users?page=2",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "users"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
