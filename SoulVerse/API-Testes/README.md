@@ -55,8 +55,21 @@ API-Testes/
 | API-LOGIN-001 | Login com credenciais válidas | Funcional | ✔ Pass |
 | API-LOGIN-002 | Login sem senha | Negativo | ✔ Pass |
 | API-LOGIN-003 | Login com email inválido | Negativo | ✔ Pass |
-| API-LOGIN-005 | Login com body vazio | Negativo | ✔ Pass |
-| API-LOGIN-006 | Método HTTP inválido (GET) | Negativo / Contrato HTTP | ✔ Pass |
+| API-LOGIN-004 | Login com body vazio | Negativo | ✔ Pass |
+| API-LOGIN-005 | Método HTTP inválido (GET) | Negativo / Contrato HTTP | ✔ Pass |
+
+---
+
+### 👤 Usuários – CRUD
+
+| ID | Cenário | Tipo de Teste | Status |
+|----|----------|---------------|--------|
+| API-USER-006 | GET Listagem de usuários | Funcional | ✔ Pass |
+| API-USER-007 | GET Usuário inexistente | Negativo | ✔ Pass |
+| API-USER-008 | POST Criar usuário | Funcional | ✔ Pass |
+| API-USER-009 | PUT Atualizar usuário | Funcional | ✔ Pass |
+| API-USER-010 | PATCH Atualização parcial | Funcional | ✔ Pass |
+| API-USER-011 | DELETE Remover usuário | Funcional | ✔ Pass |
 
 ---
 
