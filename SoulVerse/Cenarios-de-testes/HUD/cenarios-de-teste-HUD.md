@@ -24,7 +24,7 @@ Execução do Teste
 - Ambiente: Cliente Desktop
 - Executor: Daniel Chicotti
 
-**Evidência:** [Visualizar GIF](../../Evidencias/HUD/CT-HUD-001_Sucesso.png)
+**Evidência:** [Visualizar PRINT](../../Evidencias/HUD/CT-HUD-001_Sucesso.png)
 
 ---
 
@@ -49,7 +49,7 @@ Execução do Teste
 - Ambiente: Cliente Desktop
 - Executor: Daniel Chicotti
 
-**Evidência:** [Visualizar GIF](../../Evidencias/HUD/CT-HUD-002_Sucesso.png)
+**Evidência:** [Visualizar PRINT](../../Evidencias/HUD/CT-HUD-002_Sucesso.png)
 
 ---
 
@@ -74,7 +74,7 @@ Execução do Teste
 - Ambiente: Cliente Desktop
 - Executor: Daniel Chicotti
 
-**Evidência:** [Visualizar GIF](../../Evidencias/HUD/CT-HUD-003_Sucesso.png)
+**Evidência:** [Visualizar PRINT](../../Evidencias/HUD/CT-HUD-003_Sucesso.png)
 
 ---
 
@@ -99,7 +99,7 @@ Execução do Teste
 - Ambiente: Cliente Desktop
 - Executor: Daniel Chicotti
 
-**Evidência:** [Visualizar GIF](../../Evidencias/HUD/CT-HUD-004_Sucesso.png)
+**Evidência:** [Visualizar PRINT](../../Evidencias/HUD/CT-HUD-004_Sucesso.png)
 
 ---
 
@@ -124,7 +124,7 @@ Execução do Teste
 - Ambiente: Cliente Desktop
 - Executor: Daniel Chicotti
 
-**Evidência:** [Visualizar GIF](../../Evidencias/HUD/CT-HUD-005_Sucesso.png)
+**Evidência:** [Visualizar PRINT](../../Evidencias/HUD/CT-HUD-005_Sucesso.png)
 
 ---
 
@@ -152,5 +152,5 @@ Execução do Teste
 - Ambiente: Cliente Desktop
 - Executor: Daniel Chicotti
 
-**Evidência:** [Visualizar GIF](../../Evidencias/HUD/CT-HUD-006_Sucesso.png)
+**Evidência:** [Visualizar PRINT](../../Evidencias/HUD/CT-HUD-006_Sucesso.png)
 
